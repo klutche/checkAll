@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>Sample</title>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.checkAll').on('change', function() {
+		$('.' + this.id).prop('checked', this.checked);
+	});
+});
+</script>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<form>
+
+<fieldset>
+
+<input type="checkbox" id="group_01" class="checkAll"> 全て選択<br>
+
+<input type="checkbox" name="sample[]" value="1" class="group_01"> 1<br>
+<input type="checkbox" name="sample[]" value="2" class="group_01"> 2<br>
+<input type="checkbox" name="sample[]" value="3" class="group_01"> 3<br>
+<input type="checkbox" name="sample[]" value="4" class="group_01"> 4<br>
+<input type="checkbox" name="sample[]" value="5" class="group_01"> 5<br>
+
+</fieldset>
+
+<fieldset>
+
+<input type="checkbox" id="group_02" class="checkAll"> 全て選択<br>
+
+<input type="checkbox" name="sample[]" value="6" class="group_02"> 6<br>
+<input type="checkbox" name="sample[]" value="7" class="group_02"> 7<br>
+<input type="checkbox" name="sample[]" value="8" class="group_02"> 8<br>
+<input type="checkbox" name="sample[]" value="9" class="group_02"> 9<br>
+<input type="checkbox" name="sample[]" value="10" class="group_02"> 10<br>
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
