@@ -15,23 +15,23 @@ jQuery 依存のスクリプトなので、まず jQuery を読み込んでお�
 
 その下に以下のスクリプトを記載します。
 
-  <script type="text/javascript">
-  $(function(){
-    $('.checkAll').on('change', function() {
-      $('.' + this.id).prop('checked', this.checked);
+    <script type="text/javascript">
+    $(function(){
+        $('.checkAll').on('change', function() {
+            $('.' + this.id).prop('checked', this.checked);
+        });
     });
-  });
-  </script>
+    </script>
 
 ## HTML
 
-  <input type="checkbox" id="group_01" class="checkAll"> 全て選択<br>
-   
-  <input type="checkbox" value="1" class="group_01"> 1<br>
-  <input type="checkbox" value="2" class="group_01"> 2<br>
-  <input type="checkbox" value="3" class="group_01"> 3<br>
-  <input type="checkbox" value="4" class="group_01"> 4<br>
-  <input type="checkbox" value="5" class="group_01"> 5<br>
+    <input type="checkbox" id="group_01" class="checkAll"> 全て選択<br>
+    
+    <input type="checkbox" value="1" class="group_01"> 1<br>
+    <input type="checkbox" value="2" class="group_01"> 2<br>
+    <input type="checkbox" value="3" class="group_01"> 3<br>
+    <input type="checkbox" value="4" class="group_01"> 4<br>
+    <input type="checkbox" value="5" class="group_01"> 5<br>
 
 全選択の起点となるチェックボックスにクラス checkAll を設定します。
 クラス checkAll を付けたチェックボックスの id 値を、連動させたいチェックボックス全てに class の値として設定します。
